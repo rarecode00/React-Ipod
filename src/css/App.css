@@ -1,0 +1,117 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box{
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/063/726/small/wall-full-of-scratches-grungy-cement-texture-for-background-scary-dark-wall-black-wall-photo.jpg');
+  background-size: cover;
+  width: 350px;
+  height: 540px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.screen{
+  background-image: url('https://i.pinimg.com/originals/70/56/e4/7056e4cbae3187a5a2423ff42708938e.jpg');
+  background-size: cover;
+  width: 300px;
+  height: 290px;
+  border: 1px solid white;
+  border-radius: 30px;
+
+}
+
+.circular{
+  height: 200px;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 50px;
+  background-color: gray;
+}
+
+.inner-circular{
+  height: 110px;
+  width: 110px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-top: 12px;
+  margin-left: 44px;
+  background-color: lightgray;
+}
+
+.inner-circular div{
+  margin-top: 30px;
+  font-size: 1.6rem;
+}
+
+/* Buttons */
+
+.menu{
+  width: 30px;
+  color: white;
+}
+
+.circular > i{
+   color: black;
+   font-size: 1.9rem;
+}
+
+.menu{
+  position: relative;
+  top: 3px;
+}
+
+.fr{
+  position: relative;
+  left: 75px;
+  top: -75px;
+}
+
+.backward{
+  position: relative;
+  left: -47px;
+  top: -75px;
+}
+
+.pause{
+  position: relative;
+  left: -30px;
+  top: 10px;
+}
