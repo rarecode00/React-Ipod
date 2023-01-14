@@ -81,6 +81,10 @@
   font-size: 1.6rem;
 }
 
+.Menu{
+  position: absolute;
+}
+
 /* Buttons */
 
 .menu{
@@ -114,4 +118,48 @@
   position: relative;
   left: -30px;
   top: 10px;
+}
+
+/* Menu Style */
+ul{
+  list-style: none;
+  font-size: 1.8rem;
+   font-family:monospace;
+   font-style: italic;
+}
+
+.First{
+   background-color: red;
+   width: 190px;
+   height: 55px;
+   margin-left: -45px;
+   margin-top: 0px;
+   border-top-left-radius: 1.7rem;
+   font-weight: 700;
+   color: whitesmoke;
+   padding: 6px;   
+}
+
+.List > li:not(.First){
+   width: 190px;
+   background-color: lightgray;
+   margin-left: -45px;
+   height: 59px;
+   font-size: 1.2rem;
+   border-top: 1px solid black;
+   padding: 10px;
+}
+
+li:last-child{
+  border-bottom-left-radius: 1.7rem;
+}
+
+.notS{
+   cursor: default ;
+   user-select: none;
+}
+
+.fixed-height{
+  height: 400px;
+  position: relative;
 }
