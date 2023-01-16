@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Ipod/static/css/main.44b88fc7.css",
+    "main.js": "/React-Ipod/static/js/main.c05644b6.js",
+    "index.html": "/React-Ipod/index.html",
+    "main.44b88fc7.css.map": "/React-Ipod/static/css/main.44b88fc7.css.map",
+    "main.c05644b6.js.map": "/React-Ipod/static/js/main.c05644b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44b88fc7.css",
+    "static/js/main.c05644b6.js"
+  ]
+}
