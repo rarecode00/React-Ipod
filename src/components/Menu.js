@@ -7,12 +7,12 @@ const Menu = (props) => {
  const context = useContext(NoteContext)
  const {index , visible} = context
   const myStyle ={
-      backgroundColor:'cyan'
+      backgroundColor:'orangered'
   }
   return (
     <div className='container Screen Menu'>
     <ul className='List'>
-       <li className='First'><div>REACT IPOD</div></li>
+       <li className='First'><div>REACT IPOD</div><div className='author'>By~ Krishna Sharma</div></li>
        <li style={index === 2 ? myStyle : {}}><div>Games</div></li>
        <li style={index === 3 ? myStyle : {}}><div>Music</div></li>
        <li style={index === 4 ? myStyle : {}}><div>Settings</div></li>

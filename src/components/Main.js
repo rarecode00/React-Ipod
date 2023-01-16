@@ -65,16 +65,17 @@ const Main = () => {
 
   return (
     <div className="App d-flex justify-content-center my-4 fixed-height">
+      {/* {console.log(process.env.REACT_APP_API_KEY)} */}
       <div className="box d-flex justify-content-center">
         <div>
-          <div className="screen my-3">
+          <div className="screen my-3 screen-image">
             {visible ? <Menu/> : ""}
             {view === 2 ? <Game/>: ""}
             {view === 3 ? <Music/>: ""}
             {view === 4 ? <Setting/> : ""}
             {view === 5 ? <Coverflow/> : ""}
           </div>
-          <div className={`circular ${view === 3 & click ? 'neon-text' : ''}`} onMouseOver={handleIndex}>
+          <div className={`circular ${view === 3 & click ? 'neon-text' : ''}`} onMouseOver={handleIndex} onTouchMoveCapture = {handleIndex}>
             <i className="fa-solid fa-bars menu" onClick = {handle}></i>
             <div className="inner-circular"  onClick = {handleClick}>
               <div className="notS">Select</div>

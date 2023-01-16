@@ -11,7 +11,7 @@ const NoteState = (props) => {
     const [forward, setForward] = useState(false)
     const [backward, setBackward] = useState(false)
     const [escape , setEscape] = useState(false)
-    const [pause , setPause] = useState(false)
+    const [pause , setPause] = useState(true)
   
     const handleIndex = () =>{
         if(!visible) return;

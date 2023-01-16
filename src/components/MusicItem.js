@@ -8,6 +8,12 @@ const MusicItem = (props) => {
   const audioRef = React.createRef();
   const [play , setPlay] = useState(false)
   useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.play();   
+    }
+  }, []);
+
+  useEffect(() => {
     async function fetchUrl() {
       const obj = await props.songs.url;
       console.log(obj);
@@ -33,7 +39,6 @@ const MusicItem = (props) => {
 
   return (
     <div className="MusicItem">
-      {console.log(pause)}
       {escape ? setClick(false) : ""}
       <p className="Name">{props.songs.name}</p>
       <img
@@ -43,7 +48,7 @@ const MusicItem = (props) => {
         className="image-player"
         alt="Image"
       />
-      <audio ref={audioRef} controls="seeking" src={url} className="audioPlay"></audio>
+      <audio ref={audioRef} controls="seeking" src={url} className="audioPlay" autoPlay = {true}></audio>
     </div>
   );
 };

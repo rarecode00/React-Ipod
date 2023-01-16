@@ -3,7 +3,7 @@ import '../css/Game.css'
 
 const Setting = () => {
   return (
-    <img src="https://img.lovepik.com/element/45004/0999.png_860.png" alt="Setting_image" height={290} width = {300} className='Games'/>
+    <img src="https://thumbs.dreamstime.com/b/fix-vector-flat-color-icon-fix-icon-website-design-desktop-envelopment-development-premium-pack-179914421.jpg" alt="Setting_image" height={290} width = {300} className='Games'/>
   )
 }
 

@@ -1,6 +1,12 @@
 
 .App {
   text-align: center;
+  animation: mymove 1s 1;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(360deg);}
+  90% {transform: rotate(360deg);}
 }
 
 
@@ -30,13 +36,17 @@
 }
 
 .screen{
-  background-image: url('https://i.pinimg.com/originals/70/56/e4/7056e4cbae3187a5a2423ff42708938e.jpg');
+  /* background-image: url('https://i.pinimg.com/originals/70/56/e4/7056e4cbae3187a5a2423ff42708938e.jpg'); */
   background-size: cover;
   width: 300px;
   height: 290px;
   border: 1px solid white;
   border-radius: 30px;
+}
 
+.screen-image{
+  background-image: url('https://i.pinimg.com/originals/70/56/e4/7056e4cbae3187a5a2423ff42708938e.jpg');
+  opacity: .9;
 }
 
 .circular{
@@ -96,6 +106,27 @@
 
 .Menu{
   position: absolute;
+  width: 210px;
+  animation: 0.3s alternate slidein;
+
+}
+@keyframes slidein {
+  from {
+    margin-left: -9px;
+    width: 120px;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 210px;
+  }
+}
+
+.author{
+  font-size: 0.5rem;
+  margin-top: -8px;
+  margin-left: 64px;
+  overflow-y: hidden;
 }
 
 /* Buttons */
@@ -142,8 +173,7 @@ ul{
 }
 
 .First{
-   background-color: red;
-   width: 190px;
+   background-color: black;
    height: 55px;
    margin-left: -45px;
    margin-top: 0px;
@@ -154,13 +184,13 @@ ul{
 }
 
 .List > li:not(.First){
-   width: 190px;
    background-color: lightgray;
    margin-left: -45px;
    height: 58px;
    font-size: 1.2rem;
    border-top: 1px solid black;
    padding: 10px;
+   color: black;
 }
 
 
@@ -180,4 +210,3 @@ li:last-child{
   height: 400px;
   position: relative;
 }
-
