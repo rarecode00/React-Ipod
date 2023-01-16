@@ -7,6 +7,11 @@ const NoteState = (props) => {
     let [index , setIndex] = useState(2)
     let [count , setCount] = useState(0)
     let [click , setClick] = useState(false)
+    const [music , setMusic] = useState([])
+    const [forward, setForward] = useState(false)
+    const [backward, setBackward] = useState(false)
+    const [escape , setEscape] = useState(false)
+    const [pause , setPause] = useState(false)
   
     const handleIndex = () =>{
         if(!visible) return;
@@ -24,7 +29,7 @@ const NoteState = (props) => {
     }
   
     return (
-        <NoteContext.Provider value={{visible , index , click , count , setIndex , setVisible , setCount}}>
+        <NoteContext.Provider value={{visible , index , click , count , setIndex , setVisible , setCount , music , setMusic , forward , backward , setBackward , setForward , setClick , escape , setEscape , pause , setPause}}>
             {props.children}
         </NoteContext.Provider>
     )

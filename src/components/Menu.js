@@ -1,10 +1,11 @@
-import React , {useContext} from 'react'
+import React , {useContext , useState} from 'react'
 import '../css/App.css'
 import NoteContext from '../context/NoteContext'
 import Game from './Game.js'
+
 const Menu = (props) => {
  const context = useContext(NoteContext)
- const {index} = context
+ const {index , visible} = context
   const myStyle ={
       backgroundColor:'cyan'
   }

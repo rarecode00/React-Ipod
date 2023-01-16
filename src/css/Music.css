@@ -1,0 +1,131 @@
+.music{
+    font-family:sans-serif;
+    font-style: italic;
+    background-image: linear-gradient(purple , black);
+    height: 290px;
+    width: 300px;
+    margin-left: -1px;
+    border-radius: 1.7rem;
+    margin-top: -1px;
+}
+
+.Music-item{
+    background-color: lightgrey;
+    border-top: 1px solid gray;
+    height: 51px;
+    font-size: 1.2rem;
+}
+
+.Music-item:nth-child(1){
+    border-top-left-radius: 1.7rem;
+    border-top-right-radius: 1.7rem;
+}
+
+.Navigation{
+    background-color: lightgray;
+    border-top: 1px solid gray;
+    height: 39px;
+    border-bottom-left-radius: 1.7rem;
+    border-bottom-right-radius: 1.7rem;
+    text-align: start;
+    font-size: 1.1rem;
+    padding-left: 25px;
+    padding-top: 2px;
+}
+
+/* Animation for Footer Text */
+
+.neonText{
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px red, 0 0 15px #ffa500, 0 0 20px blue, 0 0 40px blue, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px lightsalmon, 0 0 15px lightsalmon, 0 0 20px blue, 0 0 40px blue, 0 0 60px #ff0000, 0 0 10px violet, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+  @keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+
+/* Music Item */
+
+.MusicItem{
+    background-color: red;
+    height: 290px;
+    width: 300px;
+    border-radius: 1.7rem;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.image-player{
+    margin-top: -5px;
+    border-radius: 1.2rem;
+    box-shadow: 2px 2px 80px white;
+}
+
+.audioPlay{
+    margin-top:10px;
+    width: 270px;
+}
+
+
+.Name{
+    background-color: aliceblue;
+    height: 58px;
+    padding-top: 5px;
+    box-shadow: 0 0 10px lightblue;
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: 600;
+    border-top-left-radius: 1.7rem;
+    border-top-right-radius: 1.7rem;
+}
