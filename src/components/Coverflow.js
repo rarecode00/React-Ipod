@@ -3,7 +3,7 @@ import '../css/Game.css'
 
 const Coverflow = () => {
   return (
-    <img src="https://i.pinimg.com/originals/4c/bd/cc/4cbdccb5d68e50ce7887fd85e8d07c67.png" width={290} height = {290} className='Games'/>
+    <img src="https://cdn.codechef.com/sites/default/files/uploads/pictures/94ef252a6c3d766d6baf57aadf1e6620.jpg" width={290} height = {290} className='Games'/>
   )
 }
 
